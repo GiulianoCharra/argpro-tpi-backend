@@ -1,14 +1,22 @@
 {
-  "name": "miback",
+  "name": "mibacktareas",
   "version": "1.0.0",
-  "description": "<h1> DESARROLLO EN ARGENTINA </h1>",
-  "main": "index.js",
+  "description": "Backend del tpi del curso de argentina programa",
+  "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "json-server --watch db.json"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiulianoCharra/argpro-tpi-backend.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiulianoCharra/argpro-tpi-backend/issues"
+  },
+  "homepage": "https://github.com/GiulianoCharra/argpro-tpi-backend#readme",
   "dependencies": {
     "json-server": "^0.17.4"
   }
