@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend del tpi del curso de argentina programa",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "run json-server": "json-server --watch db.json"
   },
