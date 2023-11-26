@@ -1,16 +1,16 @@
-import { create, router, defaults, rewriter } from "json-server";
-const server = create();
-const router = router("db.json");
+const jsonServer = require("json-server");
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
 
-const middlewares = defaults();
+const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 
-server.use();
-
-rewriter({
-  "/*": "/$1",
-});
+server.use(
+  jsonServer.rewriter({
+    "/*": "/$1",
+  })
+);
 
 server.use(router);
 
@@ -18,4 +18,4 @@ server.listen(3000, () => {
   console.log("JSON Server is running");
 });
 
-export default server;
+module.exports = server;
